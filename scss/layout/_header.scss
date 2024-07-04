@@ -1,0 +1,44 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.header {
+  // background-color: $clr-dark;
+  .branding {
+    img {
+      width: 12rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    position: relative;
+    margin-left: -34rem;
+    margin-top: 5rem;
+    gap: .2rem;
+      li{
+        border-bottom: 15px solid transparent;
+        padding-bottom: 4.2rem;
+        transition: 0.5s ease;
+        &:hover{
+          border-bottom: 15px solid $clr-primary;
+          transition: 0.5s ease;
+        }
+        a{
+          color: $clr-light;
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 1rem;
+        }
+      }
+  }
+
+  #header {
+    display: none;
+  }
+}

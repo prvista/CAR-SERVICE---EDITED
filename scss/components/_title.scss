@@ -1,0 +1,17 @@
+@use "../base/" as *;
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: $font-secondary;
+}
+
+.title-2 {
+    @extend .title;
+    margin-bottom: 0;
+}
+
+.menu-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
